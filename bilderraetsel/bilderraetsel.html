@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Bilderr&auml;tsel - Portfolio M152</title>
@@ -13,18 +13,16 @@
         <h1>Spielstand</h1>
         <table class="bilderraetsel">
             <tr>
-                <th align="left">Bild</th>
-                <th align="right">Anzahl Versuche</th>
-                <th></th>
+                <th align="left">Anzahl Clicks (gesamt)</th>
+                <th align="left" id="totalClicks"></th>
             </tr>
             <tr>
-                <td>Pinguine</td>
-                <td></td>
-                <td></td>
+                <th align="left">Anzahl Clicks (aktuelles Bild)</th>
+                <th align="left" id="currentClicks"></th>
             </tr>
             <tr>
-                <th colspan="2" align="right">Total Richtige</th>
-                <th align="right">2</th>
+                <th align="left">Punkte</th>
+                <th align="left" id="points"></th>
             </tr>
         </table>
     </div>
@@ -51,11 +49,13 @@
         </table>
         <br/>
         <span id="controls">
+            <button id="nextSnippet">N&auml;chster Ausschnitt</button>
             <select id="answer">
             </select>
             <button id="next">&Uuml;berpr&uuml;fen & weiter</button>
         </span>
     </div>
+    <br/>
 
 </body>
 </html>
